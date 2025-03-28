@@ -1,0 +1,170 @@
+.movie-details {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.movie-backdrop {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.movie-backdrop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
+  border-radius: 12px;
+}
+
+.movie-info {
+  position: relative;
+  padding: 30px;
+  width: 100%;
+}
+
+.movie-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.movie-meta {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.movie-rating {
+  display: inline-block;
+  background-color: #e50914;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.movie-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.watch-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.watch-btn span {
+  font-size: 40px;
+  color: white;
+}
+.watch-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movie-cast {
+  margin-bottom: 30px;
+}
+
+.movie-cast h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.cast-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.cast-item {
+  min-width: 120px;
+  text-align: center;
+}
+
+.cast-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.cast-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .movie-backdrop {
+    height: 400px;
+  }
+
+  .movie-info h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-backdrop {
+    height: 300px;
+  }
+
+  .movie-info {
+    padding: 20px;
+  }
+
+  .movie-info h1 {
+    font-size: 24px;
+  }
+
+  .movie-description {
+    font-size: 14px;
+  }
+}
+

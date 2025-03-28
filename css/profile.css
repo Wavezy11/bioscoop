@@ -1,0 +1,163 @@
+/* Algemene profielpagina */
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#user-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.avatar-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.avatar-form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.avatar-form input[type="file"] {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.upload-btn {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.upload-btn:hover {
+  background-color: #b4060f;
+}
+
+.logout-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: #e50914;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    text-align: center;
+  }
+
+  .profile-avatar {
+    margin-bottom: 20px;
+  }
+
+  .profile-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .avatar-form {
+    align-items: center;
+  }
+
+  .upload-btn {
+    width: auto;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  #user-name {
+    font-size: 20px;
+  }
+
+  .stat-value {
+    font-size: 20px;
+  }
+
+  .upload-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .logout-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

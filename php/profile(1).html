@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieFlix - Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="home.php">HOME</a>
+        <a href="search.php">SEARCH</a>
+        <a href="profile.html" class="active">PROFILE</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="profile-container">
+      <div class="profile-header">
+        <div class="profile-avatar">
+          <img src="img/avatar.png" alt="Profile Avatar">
+        </div>
+        <h1 id="user-name">User Name</h1>
+      </div>
+
+      <div class="profile-stats">
+        <div class="stat-item">
+          <span class="stat-value" id="watched-count">0</span>
+          <span class="stat-label">Watched</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="watchlist-count">0</span>
+          <span class="stat-label">Watchlist</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="votes-count">0</span>
+          <span class="stat-label">Votes</span>
+        </div>
+      </div>
+
+      <div class="profile-sections">
+        <h2>Vote for the movie you want to see</h2>
+        <div class="voting-grid" id="voting-container">
+          <!-- Voting options will be loaded here dynamically -->
+        </div>
+      </div>
+
+      <button id="logout-btn" class="logout-btn">Logout</button>
+    </div>
+  </main>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
+
