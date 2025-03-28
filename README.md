@@ -1,0 +1,2 @@
+# bioscoop
+democratische bioscoop
